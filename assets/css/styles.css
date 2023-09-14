@@ -1,0 +1,603 @@
+:root {
+    --font-family: 'Averia Serif Libre', cursive;
+    --font-family: 'Nunito', sans-serif;
+    --bold-font:700;
+    --bolder-font: 900;
+    --primary-color: #220624;
+    --secondary-color: #0599B3;
+    --primary-shadow: #000000;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --transition: 0.3s;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+  
+a:hover {
+    color: var(--secondary-color);
+}
+  
+body {
+    font-family: var(--font-family);
+}
+
+nav {
+    background: linear-gradient(90deg, #E7F1FD 0%, #FFE5E1 86.98%, #D2D2F8 100%);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    font-family: 'Averia Serif Libre', cursive;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+nav a {
+    color: #000000;
+    transition: var(--transition);
+    font-family: 'Nunito', sans-serif;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+    list-style-type: none;
+}
+
+
+.burger-menu {
+    color: #000000;
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.header {
+    margin: 2rem;
+    padding: 2rem;
+    border: 3rem;
+}
+
+.star1 {
+    float: right;
+    padding-right: 0%;
+}
+
+.star2 {
+    color: #0599B3;
+    float: left;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.hello {
+    display: flex;
+    justify-content: space-around;
+    font-family: Averia Serif Libre;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+    color: #0599B3;
+    margin-bottom: 0rem;
+}
+
+
+.name {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-family: Nunito;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: lowercase;
+    color: #220624;
+
+
+}
+
+.description {
+    display: flex;
+    justify-content: space-around;
+    color: #0599B3;
+    font-family: Averia Serif Libre;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.7rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+}
+
+.about {
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: none;
+}
+
+.profile-picture {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+}
+
+.bio {
+    width: 25rem;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(104deg, rgba(255, 255, 255, 0.15) 0.05%, rgba(255, 255, 255, 0.05) 98.95%);
+    backdrop-filter: blur(20px);
+}
+
+.bio h2 {
+    margin: 0.5rem;
+    color: #0599B3;
+    text-align: right;
+    font-family: Averia Serif Libre;
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.bio p {
+    line-height: 1.2rem;
+    margin: 0;
+    padding: 0.3rem 0;
+    color: #220624;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.more-about {
+    padding: 2rem;
+    background: linear-gradient(104deg, rgba(255, 255, 255, 0.15) 0.05%, rgba(255, 255, 255, 0.05) 98.95%);
+    padding: 0.6rem 3rem;
+    box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    width: fit-content;
+    border-radius: 1rem;
+}
+
+.more-about h2 {
+    margin: 0.5rem;
+    text-align: center;
+    color: #0599B3;
+    font-family: Averia Serif Libre;
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.more-about p {
+    line-height: 1.2rem;
+    margin: 0;
+    padding: 0.3rem 0;
+    color: #220624;
+    font-family: Nunito;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.skills {
+    max-width: 60rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.skill-header {
+    margin-bottom: 1rem;
+    color: #0599B3;
+    text-align: center;
+    font-family: Averia Serif Libre;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+
+.icon {
+    width: 11.8rem;
+    height: 11.2rem;
+}
+
+.icon-card {
+    background-color: linear-gradient(104deg, rgba(255, 255, 255, 0.15) 0.05%, rgba(255, 255, 255, 0.05) 98.95%);
+    box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    padding: 6rem;
+    margin: 0.5rem;
+}
+
+.projects {
+    background-color: linear-gradient(104deg, rgba(255, 255, 255, 0.15) 0.05%, rgba(255, 255, 255, 0.05) 98.95%);
+    padding: 2rem 0;
+    margin-top: 1rem;
+}
+
+.project-pic {
+    width: 85%;
+    height: 80%;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #220624;
+    margin-bottom: var(--bottom-margin);
+    font-family: Averia Serif Libre;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+}
+
+.project-container {
+    text-align: center;
+    width: 22rem;
+    padding: 1rem;
+}
+
+.project-container p {
+    padding: 0.2rem;
+}
+
+.project-details {
+    margin-bottom: var(--bottom-margin);
+    font-family: Nunito;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #220624;
+}
+
+.project-card {
+    background-color: linear-gradient(104deg, rgba(255, 255, 255, 0.15) 0.05%, rgba(255, 255, 255, 0.05) 98.95%);
+    border-radius: 1rem;
+    box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.contact {
+    margin-top: 2rem;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+    font-family: Averia Serif Libre;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: lowercase;
+    color: #220624;
+}
+
+.contact-form-container {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form-container label {
+    font-family: Nunito;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.7rem;
+    color: #220624;
+}
+
+.contact-form-container textarea {
+    min-height: 6rem;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 1.7rem;
+    color: #220624;
+}
+
+.contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 1rem;
+    border: none;
+    border: 2px outset var(--primary-color);
+    font-size: 1rem;
+    outline: none;
+    font-family: Nunito;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 1.7rem;
+}
+
+.input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #220624;
+    border: 2px solid #0599B3;
+    border-radius: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+    color: #0599B3;
+    font-family: Nunito;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.7rem;
+}
+
+.submit-btn:hover {
+    background-color: #0599B3;
+    border: 2px solid var(--primary-color);
+    color: #220624;
+    cursor: pointer;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 60%;
+}
+
+.socicon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+footer {
+    background: linear-gradient(90deg, #E7F1FD 0%, #FFE5E1 86.98%, #D2D2F8 100%);
+    padding: 1.2rem;
+    text-align: center;
+    margin: 2rem 0 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.copy {
+    text-align: center;
+    font-family: Abril Fatface;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.by {
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0.2rem;
+}
+
+.scroll-up {
+    position: fixed;
+    cursor: pointer;
+    display: flex;
+    position: fixed;
+    right: 0%;
+    bottom: 10%;
+}
+
+.up-arrow {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media screen and (max-width: 720px) {
+
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    nav ul {
+        position: fixed;
+        background: linear-gradient(90deg, #E7F1FD 0%, #FFE5E1 86.98%, #D2D2F8 100%);
+        flex-direction: column;
+        top: 80px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      }
+    
+    nav ul li {
+        margin: 8px;
+    }
+    
+    .burger-menu {
+        display: block;
+    }
+    
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    .hello {
+        justify-content: left;
+        font-size: 2.5rem;
+    }
+    
+    
+    .name {
+        justify-content: left;
+        font-size: 2.5rem;
+    }
+    
+    .description {
+        justify-content: left;
+        font-size: 1.8rem;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+      }
+    
+    .bio {
+        width: 20.5rem;
+      }
+    
+    .bio h2 {
+        font-size: 1.2rem;
+    }
+
+    .bio p {
+        font-size: 1rem;
+    }
+    
+    .more-about {
+        margin-top: 2rem;
+        padding: 1rem 3.5rem;
+    }
+    
+    .more-about h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .more-about p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .icon {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .projects-container {
+        flex-direction: column;
+    }
+    
+    .project-container {
+        width: 20.875rem;
+    }
+
+    .projects-title {
+        text-align: center;
+        color: #220624;
+        font-family: Nunito;
+        font-size: 1.4rem;
+        font-family: Averia Serif Libre;
+        text-transform: lowercase;
+    }
+
+    .contact-form-container {
+        max-width: 23.75rem;
+      }
+    
+}
+
+@media screen and (max-width: 420px) {
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .project-container {
+      width: 17.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 17.75rem;
+    }
+
+    .profile-picture {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        box-shadow: 0px 4px 25px -1px rgba(0, 0, 0, 0.25);
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem;
+        padding: 1rem;
+        gap: 1rem;
+        max-width: 10rem;
+        margin: none;
+    }
+  } 

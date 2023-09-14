@@ -1,0 +1,21 @@
+@media screen and (max-width: 720px) {
+
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    nav ul {
+        position: fixed;
+        background-color: linear-gradient(90deg, #E7F1FD 0%, #FFE5E1 86.98%, #D2D2F8 100%);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+      }
+    
+       nav ul li {
+        margin: 8px;
+      }
+  }
